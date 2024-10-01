@@ -5,14 +5,20 @@ import org.springframework.stereotype.Service;
 public class FirebaseInitialization{
 
     public void initialization() {
-        FileInputStream serviceAccount =
-                new FileInputStream("path/to/serviceAccountKey.json");
+
+        FileInputStream serviceAccount = null;
+        try {
+            new FileInputStream("./serviceAccountKey.json");
 
         FirebaseOptions options = new FirebaseOptions.Builder()
                 .setCredentials(GoogleCredentials.fromStream(serviceAccount))
                 .build();
 
         FirebaseApp.initializeApp(options);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
 }
