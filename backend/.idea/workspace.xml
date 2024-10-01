@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9d48ad9-973a-48f8-83d4-4c4cf8b27524" name="Changes" comment="Firebase directory and file">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootfirebase/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/springbootfirebase/mvnw.cmd" afterDir="false" />
+    <list default="true" id="d9d48ad9-973a-48f8-83d4-4c4cf8b27524" name="Changes" comment="firebase SDK">
       <change beforePath="$PROJECT_DIR$/springbootfirebase/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springbootfirebase/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootfirebase/src/main/java/com/backend/springbootfirebase/firebaseConnection/FirebaseInitialization.java" beforeDir="false" afterPath="$PROJECT_DIR$/springbootfirebase/src/main/java/com/backend/springbootfirebase/firebaseConnection/FirebaseInitialization.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,13 +76,22 @@
       <option name="project" value="LOCAL" />
       <updated>1727748048472</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="firebase SDK">
+      <option name="closed" value="true" />
+      <created>1727749733131</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1727749733131</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="wrong folder" />
     <MESSAGE value="test" />
     <MESSAGE value="Firebase directory and file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Firebase directory and file" />
+    <MESSAGE value="firebase SDK" />
+    <option name="LAST_COMMIT_MESSAGE" value="firebase SDK" />
   </component>
 </project>
