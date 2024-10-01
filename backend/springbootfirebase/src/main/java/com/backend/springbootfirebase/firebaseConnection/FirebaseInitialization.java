@@ -1,24 +1,35 @@
-package com.backend.springbootfirebase.firebase;
+package com.backend.springbootfirebase.firebaseConnection;
+
+import com.google.auth.oauth2.GoogleCredentials;
+import com.google.firebase.FirebaseApp;
+import com.google.firebase.FirebaseOptions;
 import org.springframework.stereotype.Service;
 
+import java.io.FileInputStream;
+
 @Service
-public class FirebaseInitialization{
+public class FirebaseInitialization {
 
     public void initialization() {
-
         FileInputStream serviceAccount = null;
         try {
-            new FileInputStream("./serviceAccountKey.json");
+            serviceAccount = new FileInputStream("./serviceAccountKey.json");  // Assign the file input stream
 
-        FirebaseOptions options = new FirebaseOptions.Builder()
-                .setCredentials(GoogleCredentials.fromStream(serviceAccount))
-                .build();
+            FirebaseOptions options = new FirebaseOptions.Builder()
+                    .setCredentials(GoogleCredentials.fromStream(serviceAccount))
+                    .build();
 
-        FirebaseApp.initializeApp(options);
-
+            FirebaseApp.initializeApp(options);
         } catch (Exception e) {
             e.printStackTrace();
+        } finally {
+            try {
+                if (serviceAccount != null) {
+                    serviceAccount.close();  // Ensure the stream is closed
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
     }
-
 }

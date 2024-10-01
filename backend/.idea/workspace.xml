@@ -5,14 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d9d48ad9-973a-48f8-83d4-4c4cf8b27524" name="Changes" comment="firebase SDK">
-      <change afterPath="$PROJECT_DIR$/springbootfirebase/src/main/java/com/backend/springbootfirebase/service/ProductService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springbootfirebase/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springbootfirebase/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springbootfirebase/src/main/java/com/backend/springbootfirebase/SpringbootfirebaseApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/springbootfirebase/src/main/java/com/backend/springbootfirebase/SpringbootfirebaseApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springbootfirebase/src/main/java/com/backend/springbootfirebase/firebaseConnection/FirebaseInitialization.java" beforeDir="false" afterPath="$PROJECT_DIR$/springbootfirebase/src/main/java/com/backend/springbootfirebase/firebaseConnection/FirebaseInitialization.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springbootfirebase/src/main/java/com/backend/springbootfirebase/service/ProductService.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -29,6 +38,9 @@
     "accountId": "f6cc4792-d605-4304-bcbc-a6529b759357"
   }
 }]]></component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "customColor": "",
   "associatedIndex": 3
@@ -40,13 +52,15 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.SpringbootfirebaseApplication.executor": "Run",
+    "Application.SpringframeworkApplication.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/andre/OneDrive/Desktop/firstProjectBack/java-firebase-demo/backend",
     "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -54,8 +68,39 @@
       <recent name="C:\Users\andre\OneDrive\Desktop\firstProjectBack\java-firebase-demo\backend" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\andre\OneDrive\Desktop\firstProjectBack\java-firebase-demo\backend\springbootfirebase\src\main\java\com\backend\springbootfirebase" />
       <recent name="C:\Users\andre\OneDrive\Desktop\firstProjectBack\java-firebase-demo\backend\springbootfirebase\src\main\java\com\backend\springbootfirebase\entity" />
     </key>
+  </component>
+  <component name="RunManager" selected="Application.SpringbootfirebaseApplication">
+    <configuration name="SpringbootfirebaseApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.backend.springbootfirebase.SpringbootfirebaseApplication" />
+      <module name="springbootfirebase" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.backend.springbootfirebase.SpringbootfirebaseApplication" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+      <module name="backend" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Unnamed" />
+      <item itemvalue="Application.SpringbootfirebaseApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.SpringbootfirebaseApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -98,7 +143,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727749771213</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="firebase SDK">
+      <option name="closed" value="true" />
+      <created>1727750755189</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1727750755189</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
