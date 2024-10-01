@@ -8,10 +8,10 @@
 		<version>3.3.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.example.firebase</groupId>
-	<artifactId>demo.springboot.firebase</artifactId>
+	<groupId>com.backend</groupId>
+	<artifactId>springbootfirebase</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>demo.springboot.firebase</name>
+	<name>springbootfirebase</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
@@ -33,6 +33,12 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.google.firebase</groupId>
+			<artifactId>firebase-admin</artifactId>
+			<version>9.1.0</version> <!-- Check for the latest version -->
 		</dependency>
 
 		<dependency>

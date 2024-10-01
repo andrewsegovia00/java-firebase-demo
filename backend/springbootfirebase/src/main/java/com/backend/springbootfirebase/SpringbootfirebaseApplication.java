@@ -1,13 +1,13 @@
-package com.example.firebase.demo.springboot.firebase;
+package com.backend.springbootfirebase;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Application {
+public class SpringbootfirebaseApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Application.class, args);
+		SpringApplication.run(SpringbootfirebaseApplication.class, args);
 	}
 
 }
