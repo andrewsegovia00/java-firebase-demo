@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d9d48ad9-973a-48f8-83d4-4c4cf8b27524" name="Changes" comment="firebase SDK">
+      <change beforePath="$PROJECT_DIR$/.idea/backend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/backend.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootfirebase/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springbootfirebase/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootfirebase/src/main/java/com/backend/springbootfirebase/SpringbootfirebaseApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/springbootfirebase/src/main/java/com/backend/springbootfirebase/SpringbootfirebaseApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springbootfirebase/src/main/java/com/backend/springbootfirebase/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springbootfirebase/src/main/java/com/backend/springbootfirebase/controller/ProductController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springbootfirebase/src/main/java/com/backend/springbootfirebase/firebaseConnection/FirebaseInitialization.java" beforeDir="false" afterPath="$PROJECT_DIR$/springbootfirebase/src/main/java/com/backend/springbootfirebase/firebaseConnection/FirebaseInitialization.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootfirebase/src/main/java/com/backend/springbootfirebase/service/ProductService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springbootfirebase/src/main/java/com/backend/springbootfirebase/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/springbootfirebase/src/main/java/com/backend/springbootfirebase/service/ProductService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,7 +151,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727750755189</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="firebase SDK">
+      <option name="closed" value="true" />
+      <created>1727755537600</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1727755537600</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

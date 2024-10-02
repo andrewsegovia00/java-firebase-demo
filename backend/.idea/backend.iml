@@ -16,5 +16,6 @@
     <orderEntry type="library" name="Maven: com.google.api:api-common:2.31.0" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot:3.3.4" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-autoconfigure:3.3.4" level="project" />
+    <orderEntry type="library" name="Maven: jakarta.annotation:jakarta.annotation-api:2.1.1" level="project" />
   </component>
 </module>
