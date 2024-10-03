@@ -11,9 +11,6 @@ import java.io.FileInputStream;
 @Service
 public class FirebaseInitialization {
 
-    String serviceAccountPath = System.getenv("GOOGLE_APPLICATION_CREDENTIALS");
-
-
     @PostConstruct
     public void initialization() {
         FileInputStream serviceAccount = null;
