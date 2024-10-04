@@ -26,35 +26,27 @@ function App() {
     <div className="App">
     <Container>
       <Row className="justify-content-md-center">
-        <Col>
+        <Col md="auto">
           <h1>Products List</h1>
         </Col>
       </Row>
       <Row className="justify-content-md-center">
-        <Col>
-        <h4>
-        {loading ? (
-          <Spinner animation="border" variant="primary">
-            <span className="visually-hidden">Loading...</span>
-          </Spinner>
+          {loading ? (
+          <Col md="auto" >
+            <Spinner animation="border" variant="primary">
+              <span className="visually-hidden">Loading...</span>
+            </Spinner>
+          </Col>
         ) : (
-          <table>
-            <thead>
-              <tr>
-                <th>Product Name</th>
-              </tr>
-            </thead>
-            <tbody>
+          <Col md="auto" >
               {products.map((product, index) => (
-                <tr key={index}>
-                  <td>{product.name}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+                <h4 key={index}>
+                  <span>{product.name}</span>
+                </h4>
+              )
+              )}
+          </Col>
         )}
-        </h4>
-        </Col>
       </Row>
     </Container>
       
