@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9d48ad9-973a-48f8-83d4-4c4cf8b27524" name="Changes" comment="Update 10/03/24" />
+    <list default="true" id="d9d48ad9-973a-48f8-83d4-4c4cf8b27524" name="Changes" comment="Update 10/03/24">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springbootfirebase/src/main/java/com/backend/springbootfirebase/SpringbootfirebaseApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/springbootfirebase/src/main/java/com/backend/springbootfirebase/SpringbootfirebaseApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/App.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,6 +55,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/andre/OneDrive/Desktop/firstProjectBack/java-firebase-demo/backend",
     "project.structure.last.edited": "Modules",

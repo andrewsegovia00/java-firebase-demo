@@ -1,23 +1,63 @@
-// import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
+import Spinner from 'react-bootstrap/Spinner';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 function App() {
+  const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true); 
+
+  useEffect(() => {
+
+    fetch('http://localhost:8080/api/products')
+      .then(response => response.json()) 
+      .then(data => {
+        setProducts(data);
+        setLoading(false); 
+      })
+      .catch(error => {
+        console.error('Error fetching products:', error);
+        setLoading(false); 
+      });
+  }, []); 
+
   return (
     <div className="App">
-      <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Container>
+      <Row className="justify-content-md-center">
+        <Col>
+          <h1>Products List</h1>
+        </Col>
+      </Row>
+      <Row className="justify-content-md-center">
+        <Col>
+        <h4>
+        {loading ? (
+          <Spinner animation="border" variant="primary">
+            <span className="visually-hidden">Loading...</span>
+          </Spinner>
+        ) : (
+          <table>
+            <thead>
+              <tr>
+                <th>Product Name</th>
+              </tr>
+            </thead>
+            <tbody>
+              {products.map((product, index) => (
+                <tr key={index}>
+                  <td>{product.name}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        )}
+        </h4>
+        </Col>
+      </Row>
+    </Container>
+      
     </div>
   );
 }
