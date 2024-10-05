@@ -23,19 +23,32 @@ const Dashboard = () => {
         });
     }, []); 
 
-    const handleDelete = async (empId) => {
+    const handleDelete = async (empName) => {
         try{
-            fetch('http://localhost:8080/api/products/${empId}', {
+            const response = await fetch(`http://localhost:8080/api/products/${empName}`, {
             method: 'DELETE',
             });
+            if(response.ok)
+                {
+                    setProducts((previousProduct) => previousProduct.filter((product)=> product.name != empName));
+                }
         } catch (error) {
-            console.error("Error deleting employee: ", error.message);
+            console.error(`Error deleting employee: ${empName}, ${error.message}`);
         }
     }
 
-    const handleUpdate = (e) => {
-        e.preventDefault();
-        fetch('http://localhost:8080/api/${e.id}')
+    const handleUpdate = async (empName) => {
+        try{
+            const response = await fetch(`http://localhost:8080/api/products${empName}`, {
+                method: 'UPDATE',
+            });
+            if(response.ok)
+            {
+                setProducts((previousProduct) => previousProduct.filter((product)=> product.name != empName));
+            }
+        } catch (error) {
+            console.error(`Error updating employee: ${empName}, ${error.message}`);
+        }
 
     }
     return  (
@@ -70,8 +83,8 @@ const Dashboard = () => {
                             <td>{product.name}</td>
                             <td>{product.number}</td>
                             <td>
-                                <Button onClick={handleDelete} variant="outline-secondary">Update</Button>{" "}
-                                <Button onClick={handleUpdate} variant="outline-danger">Delete</Button>
+                                <Button onClick={()=>handleUpdate(product.name)} variant="outline-secondary">Update</Button>{" "}
+                                <Button onClick={()=>handleDelete(product.name)} variant="outline-danger">Delete</Button>
                             </td>
                         </tr>
                         )
