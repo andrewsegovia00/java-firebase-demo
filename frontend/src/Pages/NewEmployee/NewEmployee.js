@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button"
+import "./NewEmployee.css";
 
 const NewEmployee = () => {
 
@@ -9,19 +10,24 @@ const NewEmployee = () => {
         number: ''   
     })
 
-const handleFormChange =(e) => {
-    const (name, number) = e.target;
-    setFormData{(
+const handleFormChange =(event) => {
+    const {name, value} = event.target;
+    setFormData({
         ...formData,
-        [name]: value,
-    )}
+        [name]: value
+    });
 } 
+
+const handleSubmit = async (e) => {
+    e.preventDefault();
+    // console.log(formData);
+}
 
     return(
     <>
         <div className="center-form">
             <h1>Add New Employee</h1>
-                <Form>
+                <Form onSubmit={handleSubmit}>
                     <Form.Group controlId="formBasicName">
                         <Form.Control 
                         type="text"
@@ -36,8 +42,8 @@ const handleFormChange =(e) => {
                         <Form.Control 
                         type="text"
                         name="number"
-                        placeholder="Name of Employee"
-                        value={formData.name}
+                        placeholder="Employee ID"
+                        value={formData.number}
                         onChange={handleFormChange}
                         />
                     </Form.Group>

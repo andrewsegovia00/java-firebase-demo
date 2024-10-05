@@ -14,7 +14,7 @@ const Navigationbar =  () => {
                     </Navbar.Brand>
                     <Nav className="ml-auto">
                         <Nav.Link as={Link} to="/dashboard" className="nav-link">Dashboard</Nav.Link>
-                        <Nav.Link as={Link} to="/employee" className="nav-link">New Employee</Nav.Link>
+                        <Nav.Link as={Link} to="/addEmployee" className="nav-link">Add Employee</Nav.Link>
                     </Nav>
                 </Container>
             </Navbar>
