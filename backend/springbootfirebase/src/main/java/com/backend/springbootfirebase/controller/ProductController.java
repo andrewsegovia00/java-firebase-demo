@@ -29,10 +29,15 @@ public class ProductController {
         return productService.getAllProductDetails();
         }
 
-    @PutMapping ("/products")  // Fixed the closing quote
-    public String updateProduct(@RequestBody Product product) throws ExecutionException, InterruptedException {
-        return productService.updateProduct(product);
+//    @PatchMapping("/products/{name}")
+//    public String updateProduct(@PathVariable String name, @RequestBody Product updatedProduct) throws ExecutionException, InterruptedException {
+//        return productService.updateProduct(name, updatedProduct);
+//    }
+    @PatchMapping("/products/{name}")
+    public String updateProduct(@PathVariable String name, @RequestBody Product updatedProduct) throws ExecutionException, InterruptedException {
+        return productService.updateProduct(name, updatedProduct);
     }
+
 
     @DeleteMapping ("/products/{name}")  // Fixed the closing quote
     public String deleteProduct(@PathVariable String name ) throws ExecutionException, InterruptedException {

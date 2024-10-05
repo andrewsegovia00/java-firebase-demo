@@ -5,10 +5,12 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Table from "react-bootstrap/Table"
 import Button from "react-bootstrap/Button";
+import { useNavigate } from "react-router-dom"
 
 const Dashboard = () => {
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(true); 
+    const navigate = useNavigate();
 
     useEffect(() => {
         fetch('http://localhost:8080/api/products')
@@ -37,20 +39,11 @@ const Dashboard = () => {
         }
     }
 
-    const handleUpdate = async (empName) => {
-        try{
-            const response = await fetch(`http://localhost:8080/api/products${empName}`, {
-                method: 'UPDATE',
-            });
-            if(response.ok)
-            {
-                setProducts((previousProduct) => previousProduct.filter((product)=> product.name != empName));
-            }
-        } catch (error) {
-            console.error(`Error updating employee: ${empName}, ${error.message}`);
-        }
-
+    const handleUpdate = (empName) => {
+        navigate(`/updateEmployee/${empName}`);
+        
     }
+
     return  (
     <>
     <div className="App">

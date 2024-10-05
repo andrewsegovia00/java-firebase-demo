@@ -17,7 +17,7 @@ public class SpringbootfirebaseApplication {
 			public void addCorsMappings(CorsRegistry registry) {
 				registry.addMapping("/**")  // Allow all paths
 						.allowedOrigins("http://localhost:3000")  // Allow this origin (React app)
-						.allowedMethods("GET", "POST", "PUT", "DELETE")  // Allow specific HTTP methods
+						.allowedMethods("GET", "POST", "DELETE", "PATCH")  // Allow specific HTTP methods
 						.allowedHeaders("*");  // Allow all headers
 			}
 		};

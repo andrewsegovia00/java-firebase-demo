@@ -71,11 +71,35 @@ public class ProductService {
         return productList;
     }
 
-    public String updateProduct(Product product) throws ExecutionException, InterruptedException {
+//    public String updateProduct(Product product) throws ExecutionException, InterruptedException {
+//        Firestore dbFirestore = FirestoreClient.getFirestore();
+//
+//        ApiFuture<WriteResult> collectionApiFuture = dbFirestore.collection(COLLECTION_NAME)
+//                .document(product.getName()).set(product);
+//        return collectionApiFuture.get().getUpdateTime().toString();
+//    }
+    public String updateProduct(String name, Product updatedProduct) throws ExecutionException, InterruptedException {
         Firestore dbFirestore = FirestoreClient.getFirestore();
 
-        ApiFuture<WriteResult> collectionApiFuture = dbFirestore.collection(COLLECTION_NAME)
-                .document(product.getName()).set(product);
+        // Retrieve the existing document
+        DocumentReference documentReference = dbFirestore.collection(COLLECTION_NAME).document(name);
+        ApiFuture<DocumentSnapshot> future = documentReference.get();
+        DocumentSnapshot document = future.get();
+
+        if (!document.exists()) {
+            return "Product not found!";
+        }
+
+        Product existingProduct = document.toObject(Product.class);
+
+        if (updatedProduct.getName() != null) {
+            existingProduct.setName(updatedProduct.getName());
+        }
+        if (updatedProduct.getNumber() != null) {
+            existingProduct.setNumber(updatedProduct.getNumber());
+        }
+
+        ApiFuture<WriteResult> collectionApiFuture = documentReference.set(existingProduct);
         return collectionApiFuture.get().getUpdateTime().toString();
     }
 
