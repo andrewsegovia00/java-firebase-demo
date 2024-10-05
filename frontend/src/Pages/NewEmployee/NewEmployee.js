@@ -2,6 +2,8 @@ import { useState } from 'react';
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button"
 import "./NewEmployee.css";
+import {useNavigate} from "react-router-dom"
+
 
 const NewEmployee = () => {
 
@@ -10,18 +12,32 @@ const NewEmployee = () => {
         number: ''   
     })
 
-const handleFormChange =(event) => {
-    const {name, value} = event.target;
-    setFormData({
-        ...formData,
-        [name]: value
-    });
-} 
+    const handleFormChange =(event) => {
+        const {name, value} = event.target;
+        setFormData({
+            ...formData,
+            [name]: value
+        });
+    } 
 
-const handleSubmit = async (e) => {
-    e.preventDefault();
-    // console.log(formData);
-}
+    const navigate = useNavigate();
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        try {
+            const response = await fetch('http://localhost:8080/api/products',
+            {
+                method: "POST",
+                headers: {"Content-Type": "application/json"},
+                body: JSON.stringify(formData)
+            })
+
+            const data = await response.text();
+            navigate("/dashboard")
+        }   catch (error) {
+            console.log("Error creating employee: ", error.message)
+        }
+    }
 
     return(
     <>
