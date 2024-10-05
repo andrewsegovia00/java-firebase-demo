@@ -22,6 +22,22 @@ const Dashboard = () => {
             setLoading(false); 
         });
     }, []); 
+
+    const handleDelete = async (empId) => {
+        try{
+            fetch('http://localhost:8080/api/products/${empId}', {
+            method: 'DELETE',
+            });
+        } catch (error) {
+            console.error("Error deleting employee: ", error.message);
+        }
+    }
+
+    const handleUpdate = (e) => {
+        e.preventDefault();
+        fetch('http://localhost:8080/api/${e.id}')
+
+    }
     return  (
     <>
     <div className="App">
@@ -54,8 +70,8 @@ const Dashboard = () => {
                             <td>{product.name}</td>
                             <td>{product.number}</td>
                             <td>
-                                <Button variant="outline-secondary">Update</Button>{" "}
-                                <Button variant="outline-danger">Delete</Button>
+                                <Button onClick={handleDelete} variant="outline-secondary">Update</Button>{" "}
+                                <Button onClick={handleUpdate} variant="outline-danger">Delete</Button>
                             </td>
                         </tr>
                         )
