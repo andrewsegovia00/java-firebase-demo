@@ -3,7 +3,8 @@ import Spinner from 'react-bootstrap/Spinner';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import
+import Table from "react-bootstrap/Table"
+import Button from "react-bootstrap/Button";
 
 const Dashboard = () => {
     const [products, setProducts] = useState([]);
@@ -39,12 +40,28 @@ const Dashboard = () => {
             </Col>
             ) : (
             <Col md="auto" >
-                {products.map((product, index) => (
-                    <h4 key={index}>
-                    <span>{product.name}</span>
-                    </h4>
-                )
-                )}
+                <Table striped bordered hover responsive>
+                    <thead>
+                        <tr>
+                            <th>Employee Name</th>
+                            <th>Employee ID</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {products.map((product, index) => (
+                        <tr key={index}>
+                            <td>{product.name}</td>
+                            <td>{product.number}</td>
+                            <td>
+                                <Button variant="outline-secondary">Update</Button>{" "}
+                                <Button variant="outline-danger">Delete</Button>
+                            </td>
+                        </tr>
+                        )
+                        )}
+                    </tbody>
+                </Table>
             </Col>
             )}
         </Row>
