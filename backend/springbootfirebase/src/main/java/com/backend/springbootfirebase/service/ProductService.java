@@ -71,13 +71,6 @@ public class ProductService {
         return productList;
     }
 
-//    public String updateProduct(Product product) throws ExecutionException, InterruptedException {
-//        Firestore dbFirestore = FirestoreClient.getFirestore();
-//
-//        ApiFuture<WriteResult> collectionApiFuture = dbFirestore.collection(COLLECTION_NAME)
-//                .document(product.getName()).set(product);
-//        return collectionApiFuture.get().getUpdateTime().toString();
-//    }
     public String updateProduct(String name, Product updatedProduct) throws ExecutionException, InterruptedException {
         Firestore dbFirestore = FirestoreClient.getFirestore();
 

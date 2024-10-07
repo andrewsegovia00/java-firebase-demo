@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9d48ad9-973a-48f8-83d4-4c4cf8b27524" name="Changes" comment="Update 10/03/24">
+    <list default="true" id="d9d48ad9-973a-48f8-83d4-4c4cf8b27524" name="Changes" comment="Update 10/05/24&#10;-deleting comments">
+      <change afterPath="$PROJECT_DIR$/springbootfirebase/src/main/java/com/backend/springbootfirebase/controller/HealthController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootfirebase/src/main/java/com/backend/springbootfirebase/SpringbootfirebaseApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/springbootfirebase/src/main/java/com/backend/springbootfirebase/SpringbootfirebaseApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootfirebase/src/main/java/com/backend/springbootfirebase/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springbootfirebase/src/main/java/com/backend/springbootfirebase/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootfirebase/src/main/java/com/backend/springbootfirebase/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/springbootfirebase/src/main/java/com/backend/springbootfirebase/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springbootfirebase/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springbootfirebase/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springbootfirebase/src/main/java/com/backend/springbootfirebase/firebaseConnection/FirebaseInitialization.java" beforeDir="false" afterPath="$PROJECT_DIR$/springbootfirebase/src/main/java/com/backend/springbootfirebase/firebaseConnection/FirebaseInitialization.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +58,7 @@
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/andre/OneDrive/Desktop/firstProjectBack/java-firebase-demo/backend&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/andre/OneDrive/Desktop/ShopSimulator/backend&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
@@ -69,6 +69,7 @@
       <recent name="C:\Users\andre\OneDrive\Desktop\firstProjectBack\java-firebase-demo\backend" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\andre\OneDrive\Desktop\firstProjectBack\java-firebase-demo\backend\springbootfirebase\src\main\resources" />
       <recent name="C:\Users\andre\OneDrive\Desktop\firstProjectBack\java-firebase-demo\backend\springbootfirebase" />
       <recent name="C:\Users\andre\OneDrive\Desktop\firstProjectBack\java-firebase-demo\backend\springbootfirebase\src\main\java\com\backend\springbootfirebase" />
       <recent name="C:\Users\andre\OneDrive\Desktop\firstProjectBack\java-firebase-demo\backend\springbootfirebase\src\main\java\com\backend\springbootfirebase\entity" />
@@ -193,7 +194,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727980737386</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Update 10/05/24&#10;-deleting comments">
+      <option name="closed" value="true" />
+      <created>1728189745630</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1728189745630</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -205,6 +214,7 @@
     <MESSAGE value="updated gitignore" />
     <MESSAGE value="updated gitignore &amp; .env" />
     <MESSAGE value="Update 10/03/24" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update 10/03/24" />
+    <MESSAGE value="Update 10/05/24&#10;-deleting comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update 10/05/24&#10;-deleting comments" />
   </component>
 </project>
