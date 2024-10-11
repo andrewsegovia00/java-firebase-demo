@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9d48ad9-973a-48f8-83d4-4c4cf8b27524" name="Changes" comment="Update 10/05/24&#10;-deleting comments">
-      <change afterPath="$PROJECT_DIR$/springbootfirebase/src/main/java/com/backend/springbootfirebase/controller/HealthController.java" afterDir="false" />
+    <list default="true" id="d9d48ad9-973a-48f8-83d4-4c4cf8b27524" name="Changes" comment="Deployed backend to AWS&#10;-Test function for initial API request">
+      <change afterPath="$PROJECT_DIR$/springbootfirebase/src/main/java/com/backend/springbootfirebase/entity/Employee.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootfirebase/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springbootfirebase/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springbootfirebase/src/main/java/com/backend/springbootfirebase/firebaseConnection/FirebaseInitialization.java" beforeDir="false" afterPath="$PROJECT_DIR$/springbootfirebase/src/main/java/com/backend/springbootfirebase/firebaseConnection/FirebaseInitialization.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,6 +22,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -55,7 +59,7 @@
     &quot;Application.SpringframeworkApplication.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;deploy/aws&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/andre/OneDrive/Desktop/ShopSimulator/backend&quot;,
@@ -202,7 +206,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728189745630</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Deployed backend to AWS&#10;-Test function for initial API request">
+      <option name="closed" value="true" />
+      <created>1728268945250</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1728268945250</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -215,6 +227,7 @@
     <MESSAGE value="updated gitignore &amp; .env" />
     <MESSAGE value="Update 10/03/24" />
     <MESSAGE value="Update 10/05/24&#10;-deleting comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update 10/05/24&#10;-deleting comments" />
+    <MESSAGE value="Deployed backend to AWS&#10;-Test function for initial API request" />
+    <option name="LAST_COMMIT_MESSAGE" value="Deployed backend to AWS&#10;-Test function for initial API request" />
   </component>
 </project>
