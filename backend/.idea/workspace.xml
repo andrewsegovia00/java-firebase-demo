@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9d48ad9-973a-48f8-83d4-4c4cf8b27524" name="Changes" comment="Implemented Employee Entity Class">
+    <list default="true" id="d9d48ad9-973a-48f8-83d4-4c4cf8b27524" name="Changes" comment="Addition of bonusId, liked employee for synergy&#10;and disliked employee lists for an applied bonus or punishment">
+      <change afterPath="$PROJECT_DIR$/springbootfirebase/src/main/java/com/backend/springbootfirebase/entity/Bonus.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootfirebase/src/main/java/com/backend/springbootfirebase/entity/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/springbootfirebase/src/main/java/com/backend/springbootfirebase/entity/Employee.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/.." value="deploy/aws" />
+        <entry key="$PROJECT_DIR$/.." value="entity/employee" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -58,7 +58,7 @@
     "Application.SpringframeworkApplication.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "entity/employee",
+    "git-widget-placeholder": "entity/refactor",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/andre/OneDrive/Desktop/ShopSimulator/backend",
@@ -221,7 +221,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728622609355</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Addition of bonusId, liked employee for synergy&#10;and disliked employee lists for an applied bonus or punishment">
+      <option name="closed" value="true" />
+      <created>1728707616488</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1728707616488</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -236,6 +244,7 @@
     <MESSAGE value="Update 10/05/24&#10;-deleting comments" />
     <MESSAGE value="Deployed backend to AWS&#10;-Test function for initial API request" />
     <MESSAGE value="Implemented Employee Entity Class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented Employee Entity Class" />
+    <MESSAGE value="Addition of bonusId, liked employee for synergy&#10;and disliked employee lists for an applied bonus or punishment" />
+    <option name="LAST_COMMIT_MESSAGE" value="Addition of bonusId, liked employee for synergy&#10;and disliked employee lists for an applied bonus or punishment" />
   </component>
 </project>
