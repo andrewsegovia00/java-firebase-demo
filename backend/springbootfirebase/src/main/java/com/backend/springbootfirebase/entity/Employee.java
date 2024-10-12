@@ -1,17 +1,27 @@
 package com.backend.springbootfirebase.entity;
+import java.sql.Array;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Employee {
 
-    String name;
-    int id;
-    String description;
+    private String name;
+    private int id;
+    private String description;
 //    List<empBonus> empBonus;
 //    List<empBonus> empClash;
+    private List<String> bonusIds;
+    private List<String> likedEmployeeIds;
+    private List<String> dislikedEmployeeIds;
 
     public Employee(String name, int empId, String empDescription) {
         this.name = name;
         this.id = empId;
         this.description = empDescription;
+        this.bonusIds = new ArrayList<>();
+        this.likedEmployeeIds = new ArrayList<>();
+        this.dislikedEmployeeIds = new ArrayList<>();
+
     }
 
     public String getName() {
@@ -36,6 +46,30 @@ public class Employee {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public List<String> getBonusIds() {
+        return bonusIds;
+    }
+
+    public void setBonusIds(List<String> bonusIds) {
+        this.bonusIds = bonusIds;
+    }
+
+    public List<String> getLikedEmployeeIds() {
+        return likedEmployeeIds;
+    }
+
+    public void setLikedEmployeeIds(List<String> likedEmployeeIds) {
+        this.likedEmployeeIds = likedEmployeeIds;
+    }
+
+    public List<String> getDislikedEmployeeIds() {
+        return dislikedEmployeeIds;
+    }
+
+    public void setDislikedEmployeeIds(List<String> dislikedEmployeeIds) {
+        this.dislikedEmployeeIds = dislikedEmployeeIds;
     }
 
 }
